@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallery</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./lightbox.css" />
   </head>
   <body>
     <div class="container">
       <div class="gallery">
-        <img src="img/1.jpg" />
+        <a href="img/1.jpg" data-lightbox="mypics" data-title="Image1">
+          <img src="img/1.jpg" />
+        </a>
         <img src="img/2.jpg" />
         <img src="img/3.jpg" />
         <img src="img/4.jpg" />
@@ -20,5 +23,6 @@
         <img src="img/8.jpg" />
       </div>
     </div>
+    <script src="./lightbox-plus-jquery.min.js"></script>
   </body>
 </html>
